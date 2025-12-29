@@ -1,0 +1,27 @@
+:root {
+  --background-primary: #060b17;
+  --background-secondary: #03070a;
+  --background-nav: #03060a;
+
+  --color-card-1: #0f1c29;
+  --color-card-2: #060b17;
+
+  --color-primary: #d40b25;
+  --color-primary-light: #401c29;
+  --color-secondary: #cc7400;
+  --color-secondary-light: #42321c;
+  --color-text: #7a776d;
+
+  --background: linear-gradient(
+    rgba(59, 100, 18, 0.75),
+    rgba(59, 100, 18, 0.75)
+  );
+
+  --shadow: rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
