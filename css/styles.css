@@ -11,11 +11,9 @@
   --color-secondary: #cc7400;
   --color-secondary-light: #42321c;
   --color-text: #7a776d;
+  --color-text-secondary: #f7f7f7;
 
-  --background: linear-gradient(
-    rgba(59, 100, 18, 0.75),
-    rgba(59, 100, 18, 0.75)
-  );
+  --background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
 
   --shadow: rgba(0, 0, 0, 0.3);
 }
@@ -24,4 +22,373 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* header */
+
+header {
+  background-color: var(--background-nav);
+  padding: 0.5rem 0;
+
+  .contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: auto;
+
+    a {
+      img {
+        width: 7rem;
+      }
+    }
+
+    nav {
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        li {
+          list-style: none;
+
+          a {
+            text-decoration: none;
+            color: var(--color-text);
+            transition: 0.3s ease-in-out;
+            padding-bottom: 0.2rem;
+
+            &:hover {
+              color: var(--color-primary);
+              border-bottom: 1px solid var(--color-primary);
+            }
+          }
+        }
+      }
+    }
+
+    .button-nav {
+      button {
+        padding: 0.4rem 0.7rem;
+        background-color: var(--color-primary);
+        color: var(--color-text-secondary);
+        border: 1px solid transparent;
+        border-radius: 5px;
+        font-weight: 500;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background-color: #b1071e;
+        }
+      }
+    }
+  }
+}
+
+/* Hero */
+
+.hero {
+  background: var(--background), url("../img/hero/hero.webp");
+  height: 40rem;
+  position: relative;
+
+  .contenedor-hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    img {
+      width: 45rem;
+    }
+
+    p {
+      color: var(--color-text-secondary);
+      font-size: 1.7rem;
+      padding: 1rem 0;
+    }
+
+    .contenedor-buttons-hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      a {
+        padding: 0.6rem 1rem;
+        border-radius: 6px;
+        text-decoration: none;
+      }
+
+      .button-netflix {
+        background-color: var(--color-primary);
+        border: 1px solid transparent;
+        color: var(--color-text-secondary);
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background-color: #b1071e;
+        }
+      }
+
+      .button-descubre {
+        background-color: transparent;
+        border: 1px solid var(--color-primary);
+        color: var(--color-primary);
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          background-color: var(--color-primary);
+          color: var(--color-text-secondary);
+        }
+      }
+    }
+  }
+}
+
+/* Sección 2 */
+
+.seccion-2 {
+  background-color: var(--background-primary);
+
+  .contenedor-seccion2 {
+    max-width: 70%;
+    margin: auto;
+    padding: 3.5rem 0;
+
+    h2 {
+      color: var(--color-primary);
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .grid-seccion-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 1rem;
+      padding-top: 1.5rem;
+
+      .caja-1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: var(--color-card-1);
+        padding: 2rem;
+        border: 1px solid var(--color-primary);
+        border-radius: 15px;
+
+        h3 {
+          color: var(--color-text-secondary);
+          font-size: 1.7rem;
+        }
+
+        p {
+          color: var(--color-text);
+          padding: 1rem 0;
+          line-height: 1.4;
+        }
+      }
+
+      .caja-2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background-color: var(--color-card-1);
+        padding: 2rem;
+        border: 1px solid var(--color-secondary);
+        border-radius: 15px;
+
+        h3 {
+          color: var(--color-text-secondary);
+          font-size: 1.7rem;
+        }
+
+        p {
+          color: var(--color-text);
+          padding: 1rem 0;
+          line-height: 1.4;
+        }
+
+        .datos-caja-2 {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+
+          span {
+            padding: 0.3rem 0.7rem;
+            border-radius: 10px;
+          }
+
+          .dato-1 {
+            color: var(--color-primary);
+            background-color: var(--color-primary-light);
+            border: 1px solid var(--color-primary);
+          }
+
+          .dato-2 {
+            color: var(--color-secondary);
+            background-color: var(--color-secondary-light);
+            border: 1px solid var(--color-secondary);
+          }
+        }
+      }
+
+      .caja-3 {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        background-color: var(--color-card-1);
+        padding: 2rem;
+        border: 1px solid var(--color-primary);
+        border-radius: 15px;
+
+        h3 {
+          color: var(--color-text-secondary);
+          font-size: 1.7rem;
+        }
+
+        .contenedor-datos {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 1rem;
+          padding: 3rem;
+
+          .datos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--color-text);
+
+            .datos-titulo-1 {
+              color: var(--color-primary);
+              font-size: 1.5rem;
+            }
+
+            .datos-titulo-2 {
+              color: var(--color-secondary);
+              font-size: 1.5rem;
+            }
+
+            .datos-text {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Sección personajes */
+
+.seccion-3 {
+  background-color: var(--background-secondary);
+
+  .contenedor-seccion-3 {
+    max-width: 70%;
+    margin: auto;
+    padding: 3.5rem 0;
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    h2 {
+      color: var(--color-primary);
+      font-size: 2.5rem;
+      padding-bottom: 0.2rem;
+    }
+
+    p {
+      color: var(--color-text);
+    }
+
+    .grid-personajes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 1rem;
+      padding-top: 1.5rem;
+
+      img {
+        width: 10rem;
+      }
+
+      .card-1 {
+        grid-column: 1/2;
+        grid-row: 1/3;
+        background-color: var(--color-card-2);
+        border: 1px solid var(--color-primary-light);
+        border-radius: 10px;
+        padding: 1.5rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+
+        img {
+          width: 20rem;
+          border-radius: 10px;
+        }
+
+        h3 {
+          color: var(--color-primary);
+          font-size: 1.8rem;
+        }
+      }
+
+      .card-2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        background-color: var(--color-card-2);
+        border: 1px solid var(--color-primary-light);
+        border-radius: 10px;
+        padding: 1.5rem;
+      }
+
+      .card-3 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background-color: var(--color-card-2);
+        border: 1px solid var(--color-primary-light);
+        border-radius: 10px;
+        padding: 1.5rem;
+      }
+
+      .card-4 {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        background-color: var(--color-card-2);
+        border: 1px solid var(--color-primary-light);
+        border-radius: 10px;
+        padding: 1.5rem;
+      }
+
+      .card-5 {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        background-color: var(--color-card-2);
+        border: 1px solid var(--color-primary-light);
+        border-radius: 10px;
+        padding: 1.5rem;
+      }
+
+      .card-6 {
+        grid-column: 2/3;
+        grid-row: 3/5;
+        background-color: var(--color-card-2);
+        border: 1px solid var(--color-primary-light);
+        border-radius: 10px;
+        padding: 1.5rem;
+      }
+    }
+  }
 }
