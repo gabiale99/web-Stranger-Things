@@ -803,6 +803,7 @@ header {
 }
 
 /* Sección temporadas Móvil */
+
 @media screen and (max-width: 430px) {
   .seccion-4 {
     .contenedor-seccion-4 {
@@ -835,7 +836,7 @@ header {
   background-color: var(--background-secondary);
 
   .container-seccion-5 {
-    max-width: 70%;
+    width: 70%;
     margin: auto;
     padding: 3.5rem 0;
 
@@ -920,6 +921,21 @@ header {
         &:hover {
           background-color: #b1071e;
         }
+      }
+    }
+  }
+}
+
+/* Sección datos curiosos Móvil */
+
+@media screen and (max-width: 430px) {
+  .secction-5 {
+    .container-seccion-5 {
+      width: 90%;
+
+      .grid-curiosidades {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
       }
     }
   }
