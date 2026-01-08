@@ -5,29 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Stranger Things</title>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <header>
       <div class="contenedor-header">
-        <div>
-          <a href="./index.html">
-            <img
-              src="./img/logo/logo-grande.svg"
-              alt="Logo de Stranger Things"
-            />
-          </a>
+        <div class="contenedor-manu">
+          <div class="titulo">
+            <a href="./index.html">
+              <img
+                src="./img/logo/logo-grande.svg"
+                alt="Logo de Stranger Things"
+              />
+            </a>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-menu-3"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M10 6h10" />
+              <path d="M4 12h16" />
+              <path d="M7 12h13" />
+              <path d="M4 18h10" />
+            </svg>
+          </div>
         </div>
-        <nav>
-          <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#personaje">Personaje</a></li>
-            <li><a href="#temporada">Temporada</a></li>
-            <li><a href="#curiosidades">Curiosidades</a></li>
-          </ul>
-        </nav>
-        <div class="button-nav">
-          <button>Ver en Netflix</button>
+        <div class="contenedor-nav-boton">
+          <nav>
+            <ul>
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#personaje">Personaje</a></li>
+              <li><a href="#temporada">Temporada</a></li>
+              <li><a href="#curiosidades">Curiosidades</a></li>
+            </ul>
+          </nav>
+          <div class="button-nav">
+            <button>Ver en Netflix</button>
+          </div>
         </div>
       </div>
     </header>
