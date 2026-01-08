@@ -945,7 +945,7 @@ header {
   background-color: var(--background-primary);
 
   .contenedor-secction-6 {
-    max-width: 70%;
+    width: 70%;
     margin: auto;
     padding: 3.5rem 0;
 
@@ -1042,6 +1042,21 @@ header {
         &:hover {
           background-color: var(--color-secondary-light);
         }
+      }
+    }
+  }
+}
+
+/* Sección comunidad Móvil */
+
+@media screen and (max-width: 430px) {
+  .secction-6 {
+    .contenedor-secction-6 {
+      width: 90%;
+
+      .grid-comunidad {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
       }
     }
   }
