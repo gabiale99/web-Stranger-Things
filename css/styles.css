@@ -607,6 +607,7 @@ header {
 }
 
 /* Personajes Sección 3 Móvil */
+
 @media screen and (max-width: 430px) {
   .seccion-3 {
     .contenedor-seccion-3 {
@@ -651,7 +652,7 @@ header {
   background-color: var(--background-primary);
 
   .contenedor-seccion-4 {
-    max-width: 70%;
+    width: 70%;
     margin: auto;
     padding: 3.5rem 0;
 
@@ -795,6 +796,33 @@ header {
 
         &:hover {
           background-color: #b1071e;
+        }
+      }
+    }
+  }
+}
+
+/* Sección temporadas Móvil */
+@media screen and (max-width: 430px) {
+  .seccion-4 {
+    .contenedor-seccion-4 {
+      width: 90%;
+
+      .contenedor-card {
+        .card {
+          flex-direction: column;
+
+          .contenedor-numero-temporada {
+            width: 100%;
+            text-align: center;
+          }
+
+          .contenedor-texto-card {
+            .conteiner-titulo-card {
+              flex-direction: column;
+              align-items: flex-start;
+            }
+          }
         }
       }
     }
