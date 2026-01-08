@@ -162,13 +162,25 @@ header {
   }
 }
 
+/* Hero Móvil */
+@media screen and (max-width: 430px) {
+  .hero {
+    background-position: center;
+    .contenedor-hero {
+      img {
+        width: 20rem;
+      }
+    }
+  }
+}
+
 /* Sección 2 */
 
 .seccion-2 {
   background-color: var(--background-primary);
 
   .contenedor-seccion2 {
-    max-width: 70%;
+    width: 70%;
     margin: auto;
     padding: 3.5rem 0;
 
@@ -291,6 +303,35 @@ header {
               font-size: 1.2rem;
             }
           }
+        }
+      }
+    }
+  }
+}
+
+/* Hero Sección 2 */
+@media screen and (max-width: 430px) {
+  .seccion-2 {
+    .contenedor-seccion2 {
+      width: 90%;
+
+      .grid-seccion-2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+
+        .caja-1 {
+          grid-column: 1/2;
+          grid-row: 1/2;
+        }
+
+        .caja-2 {
+          grid-column: 1/2;
+          grid-row: 2/3;
+        }
+
+        .caja-3 {
+          grid-column: 1/2;
+          grid-row: 3/4;
         }
       }
     }
