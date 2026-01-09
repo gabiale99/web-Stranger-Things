@@ -434,6 +434,24 @@ header {
   }
 }
 
+/* Sección 2 tablet */
+
+@media screen and (min-width: 430px) and (max-width: 1366px) {
+  .seccion-2 {
+    .contenedor-seccion2 {
+      width: 90%;
+
+      .grid-seccion-2 {
+        .caja-3 {
+          .contenedor-datos {
+            padding-top: 3.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
 /* Sección personajes */
 
 .seccion-3 {
@@ -736,6 +754,16 @@ header {
   }
 }
 
+/* Sección personajes tablet */
+
+@media screen and (min-width: 430px) and (max-width: 1366px) {
+  .seccion-3 {
+    .contenedor-seccion-3 {
+      width: 90%;
+    }
+  }
+}
+
 /* Sección temporadas */
 
 .seccion-4 {
@@ -920,6 +948,16 @@ header {
   }
 }
 
+/* Sección temporadas tablet */
+
+@media screen and (min-width: 430px) and (max-width: 1366px) {
+  .seccion-4 {
+    .contenedor-seccion-4 {
+      width: 90%;
+    }
+  }
+}
+
 /* Sección datos curiosos */
 
 .secction-5 {
@@ -1027,6 +1065,16 @@ header {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
       }
+    }
+  }
+}
+
+/* Sección datos curiosos tablet */
+
+@media screen and (min-width: 430px) and (max-width: 1366px) {
+  .secction-5 {
+    .container-seccion-5 {
+      width: 90%;
     }
   }
 }
@@ -1148,6 +1196,16 @@ header {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
       }
+    }
+  }
+}
+
+/* Sección comunidad tablet */
+
+@media screen and (min-width: 430px) and (max-width: 1366px) {
+  .secction-6 {
+    .contenedor-secction-6 {
+      width: 90%;
     }
   }
 }
